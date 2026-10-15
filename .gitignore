@@ -1,0 +1,21 @@
+﻿.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+artifacts/
+recordings/
+transcripts/
+# Local credentials and agent settings
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+*.pem
+*.key
+# Local model cache and build outputs
+models/
+.cache/
+build/
+dist/
+*.log

@@ -1,0 +1,56 @@
+﻿{
+  "scope": "preflight_only_gpu_and_audio_not_tested",
+  "os": {
+    "system": "Windows",
+    "required": "Windows 10/11 x64",
+    "compatible": true
+  },
+  "python": {
+    "version": "3.14.4",
+    "implementation": "CPython",
+    "bits": 64,
+    "required": "3.11 x64",
+    "compatible": false
+  },
+  "packages": {
+    "faster-whisper": {
+      "available": false,
+      "version": null
+    },
+    "ctranslate2": {
+      "available": false,
+      "version": null
+    },
+    "PyAudioWPatch": {
+      "available": false,
+      "version": null
+    }
+  },
+  "tools": {
+    "ffmpeg": {
+      "available": false,
+      "version": null,
+      "status": "missing"
+    },
+    "ffprobe": {
+      "available": false,
+      "version": null,
+      "status": "missing"
+    },
+    "nvidia-smi": {
+      "available": false,
+      "version": null,
+      "status": "missing"
+    }
+  },
+  "readiness": "blocked",
+  "blockers": [
+    "python_requires_3_11_x64",
+    "package_missing:faster-whisper",
+    "package_missing:ctranslate2",
+    "package_missing:PyAudioWPatch",
+    "tool_unavailable:ffmpeg",
+    "tool_unavailable:ffprobe",
+    "tool_unavailable:nvidia-smi"
+  ]
+}

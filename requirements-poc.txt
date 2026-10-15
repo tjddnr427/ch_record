@@ -1,0 +1,3 @@
+﻿# Phase 0 후보 의존성. 실장치 검증 전이며 lockfile이 아님.
+faster-whisper
+PyAudioWPatch; sys_platform == "win32"
